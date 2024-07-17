@@ -53,7 +53,6 @@ CSS For Navbar
 .nav-items ul li a {
     text-decoration: none;
     color: inherit;
-    
 }
 
 .nav-items ul li:last-child{
@@ -82,13 +81,13 @@ CSS For home-banner
 #home-banner{
     background-image: url(../assets/home-banner.png);
     background-size: cover;
-    /* width:  100vw; */
     width: 100%;
-    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .banner-elements {
-    /* width: 100%; */
+    width: 80%;
     height: 290px;
     display: flex;
     align-items: center;
@@ -115,6 +114,8 @@ CSS For home-banner
 CSS For coference section
 ==============================================
 */
+
+
 
 .conference {
   background-color: #000;
@@ -176,5 +177,78 @@ CSS For coference section
   font-size: 12px;
   color: rgb(218, 218, 218);
   font-weight: 400;
+}
+
+/*
+==============================================
+CSS For know about us section
+==============================================
+*/
+
+#home-know-about{
+    width: 80%;
+    height: 580px;
+    margin: 80px 0px;
+    /* padding: 0px 100px; */
+}
+
+.know-about-container {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.know-about-content {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 20px;
+}
+
+.know-about-text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background: #000;
+}
+
+.know-about-header {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.know-about-info {
+    text-align: left;
+    margin-right: 100px;
+    color: #525560;
+}
+
+.know-about-btn {
+    height: 50px;
+    width: 150px;
+    background-color: #70C174;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+.know-about-img {
+    width: 480px;
+    height: 580px;
+
 }
 

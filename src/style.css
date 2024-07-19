@@ -332,8 +332,133 @@ CSS For know our team section
   gap: 20px;
 }
 
-.card-icons img{
+.card-icons img {
   height: 20px;
   width: 20px;
 
+}
+
+/*
+==============================================
+CSS For know our events section
+==============================================
+*/
+
+#our-events {
+  height: 700px;
+  width: 80%;
+  /* background-color: red; */
+}
+
+.our-events-container {
+  height: 100%;
+  width: 100%;
+}
+
+
+.event-text-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.big-line {
+  width: 80%;
+  height: 1px;
+  background: #E5E5E5;
+  /* margin: 0px 10px; */
+}
+
+.event-card {
+  height: 190px;
+  width: 50%;
+  background-color: #BEF3C0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.event-card span {
+  font-size: 48px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.event-card span h1 {
+  font-size: 16px;
+}
+
+.event-card img {
+  height: 56px;
+  width: 56px;
+}
+
+.event-card-text h2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.event-card-text span {
+  font-size: 40px;
+}
+
+/* .mission-card {
+  background-image: url(../assets/events-banner.png);
+  height: 384px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 4px;
+} */
+
+.mission-card {
+  position: relative;
+  background-image: url(../assets/events-banner.png);
+  height: 384px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.mission-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.mission-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.mission-card-content p {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.mission-card button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.mission-card button:hover {
+  background-color: #b4b4b4;
 }

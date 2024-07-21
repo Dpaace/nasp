@@ -1,26 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 /* 
 ==============================================
 CSS For Navbar
 ==============================================
 */
-.navbar {
-  /* background-color: aqua; */
+
+/* .navbar {
   height: 80px;
   width: 100%;
   display: flex;
@@ -29,7 +15,6 @@ CSS For Navbar
 }
 
 .logo-container {
-  /* background-color: aqua; */
   width: 100px;
   display: flex;
   align-items: center;
@@ -38,10 +23,6 @@ CSS For Navbar
 .logo {
   height: 50px;
   width: 50px;
-}
-
-.nav-items {
-  /* background-color: red; */
 }
 
 .nav-items ul li {
@@ -65,10 +46,7 @@ CSS For Navbar
 
 .nav-items ul li a.active {
   font-weight: bold;
-  /* font-size: larger; */
-  /* color: blue; */
-}
-
+} */
 
 
 /*
@@ -468,7 +446,7 @@ CSS For footer section
 ==============================================
 */
 
-#footer {
+/* #footer {
   height: 400px;
   width: 100%;
   background-color: #000;
@@ -513,4 +491,4 @@ CSS For footer section
   height: 30px;
   width: 30px;
   margin-right: 15px;
-}
+} */

@@ -1,6 +1,6 @@
 /*
 ==============================================
-CSS For know about us section
+CSS For know about us banner section
 ==============================================
 */
 
@@ -127,4 +127,148 @@ CSS For know about us section
     font-size: 16px;
     font-weight: normal;
     margin-right: 100px;
+}
+
+/*
+==============================================
+CSS For What we do section
+==============================================
+*/
+
+#what-we-do {
+    background-color: #EFF7F2;
+    width: 100%;
+    height: 1288px;
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-do-container {
+    height: 100%;
+    width: 80%;
+}
+
+.what-we-do-header {
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.message-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.message-content {
+    height: 860px;
+    width: 50%;
+}
+
+.image-content {
+    width: 45%;
+}
+
+.president-pic {
+    height: auto;
+    width: 80%;
+}
+
+.message-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: justify;
+}
+
+.message-content p span {
+    font-weight: 700;
+}
+
+.image-content p {
+    width: 80%;
+    text-align: right;
+    line-height: 25.6px;
+}
+
+/*
+==============================================
+CSS For our team section
+==============================================
+*/
+
+#our-team {
+    height: 1500px;
+    width: 80%;
+    margin: 80px 0px;
+}
+
+.our-team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-text-content p {
+    color: #525560;
+}
+
+.team-card-content {
+    display: flex;
+    gap: 50px;
+}
+
+.card1,
+.card2,
+.card3 {
+    height: 450px;
+    width: 320px;
+}
+
+.card-pic {
+    max-width: 320px;
+    max-height: 320px;
+    height: 310px;
+    width: 100%;
+}
+
+.card-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.card-text-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-text-content h3 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #1D2130;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-icons img {
+    height: 20px;
+    width: 20px;
 }

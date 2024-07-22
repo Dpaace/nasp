@@ -8,6 +8,7 @@ CSS For know about us section
     width: 80%;
     height: 350px;
     margin: 80px 0px;
+    margin-bottom: 200px;
 }
 
 .know-about-text {
@@ -45,6 +46,7 @@ CSS For know about us section
     margin-left: 90px;
     font-size: 56px;
     font-weight: bold;
+    text-align: left;
 }
 
 .side-col-text {
@@ -54,6 +56,7 @@ CSS For know about us section
 .side-col-header {
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
 }
 
 .side-col-info {
@@ -62,11 +65,66 @@ CSS For know about us section
     text-align: justify;
 }
 
-.banner-card {
-    /* position: relative; */
-    /* background-image: url(../assets/aboutus/banner.png); */
-    height: 384px;
+#know-about-banner {
+    background-color: #EFF7F2;
     width: 100%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+.banner-card {
+    position: relative;
+    height: 448px;
+    width: 80%;
     background-size: contain;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    transform: translate(0%, -80%);
+    z-index: 999;
+}
+
+.banner-card-img {
+    height: 448px;
+    width: 100%;
+}
+
+.banner-content {
+    z-index: 1;
+    position: absolute;
+    height: 300px;
+    width: 80%;
+    display: flex;
+}
+
+.banner-mission {
+    width: 50%;
+}
+
+.banner-vision {
+    width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner-mission ul li {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.banner-vision p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 100px;
 }

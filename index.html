@@ -9,9 +9,26 @@
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/navbarstyle.css">
     <link rel="stylesheet" href="src/footerstyle.css">
+    <link rel="stylesheet" href="src/popup.css">
 </head>
 
 <body>
+
+
+    <!-- Popup Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img src="assets/home/pop_up_home.png" alt="Popup Image" class="popup-image">
+            <br>
+            <button class="register-btn"
+                    onclick="window.open('https://forms.gle/aTNwU7dsMsoN4QNK7', '_blank')">
+                    Register Now
+                </button>
+        </div>
+    </div>
+
+
     <nav class="navbar">
         <div class="logo-container">
             <img class="logo" src="assets/logo.png" alt="logo">
@@ -280,6 +297,18 @@
             </div>
         </div>
     </section>
+    <script>
+        // Show the popup when the page loads
+        window.onload = function () {
+            document.getElementById('popup').style.display = 'block';
+        };
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+    </script>
 </body>
 
 </html>

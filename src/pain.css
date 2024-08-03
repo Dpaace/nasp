@@ -89,3 +89,25 @@
 .report-adress-date p {
   color: black;
 }
+
+.interested {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.interested h2 {
+    font-size: 36px;
+}
+
+.interested a {
+    color:  #525560;
+}
+
+.contact-form-div {
+    width: 100%;
+    padding: 0;
+}
+
+.form-input {
+    width: 100%;
+}

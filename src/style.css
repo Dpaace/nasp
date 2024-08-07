@@ -1,54 +1,3 @@
-
-
-/* 
-==============================================
-CSS For Navbar
-==============================================
-*/
-
-/* .navbar {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-container {
-  width: 100px;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 50px;
-  width: 50px;
-}
-
-.nav-items ul li {
-  list-style-type: none;
-  display: inline;
-  margin: 0px 15px;
-}
-
-.nav-items ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-items ul li:last-child {
-  margin-right: 30px;
-  background-color: #000;
-  color: #fff;
-  padding: 0.7rem;
-  border-radius: 4px;
-}
-
-.nav-items ul li a.active {
-  font-weight: bold;
-} */
-
-
 /*
 ==============================================
 CSS For home-banner
@@ -89,75 +38,94 @@ CSS For home-banner
 
 /*
 ==============================================
-CSS For coference section
+CSS For conference section
 ==============================================
 */
 
 #home-conference {
   width: 80%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .conference {
   background-color: #000;
-  width: 1280px;
-  height: 576px;
+  width: 100%;
+  height: 80%;
   border-radius: 12px;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 }
 
-.conference-text-image-wrapper {
+.content-wrapper {
+  height: 80%;
+  width: 90%;
   display: flex;
-  margin: 0 3rem 0 7rem;
-  align-items: center;
 }
 
-.conference-text-part {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-}
-
-.only-text-group {
+.text-content {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-.only-text-group h2 {
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-right: 30px;
+}
+
+.conference-btn {
+  background-color: #70C174;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  padding: 20px;
+}
+
+.conference-btn:hover {
+  background-color: #00c90a;
+  color: #fff;
+}
+
+.text-content h2 {
   font-size: 16px;
   font-weight: 500;
+  line-height: 25px;
 }
 
-.only-text-group h1 {
+.text-content h1 {
   font-size: 45px;
   font-weight: 500;
+  line-height: 25px;
 }
 
-.only-text-group p {
+.text-content p {
   font-size: 16px;
   color: rgb(218, 218, 218);
-  line-height: 2;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: left;
 }
 
-.quantity-text-group {
-  display: flex;
-  gap: 1.4rem;
-}
-
-.quantity-text {
+.image-content {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-}
-
-.quantity-text h2 {
-  font-size: 12px;
-  color: rgb(218, 218, 218);
-  font-weight: 400;
+  justify-content: center;
 }
 
 /*
@@ -167,28 +135,39 @@ CSS For know about us section
 */
 
 #home-know-about {
-  width: 80%;
-  height: 580px;
-  margin: 80px 0px;
-  /* padding: 0px 100px; */
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .know-about-container {
-  width: 100%;
+  width: 80%;
   height: 100%;
-  /* background-color: red; */
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
+.know-about-image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+
+}
+
+.know-about-img {
+  max-height: 100%;
+  height: 450px;
+  width: auto;
+  border-radius: 32px;
+}
+
 .know-about-content {
-  /* background-color: aqua; */
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   justify-content: center;
   gap: 20px;
 }
@@ -209,12 +188,15 @@ CSS For know about us section
 .know-about-header {
   font-size: 48px;
   font-weight: bold;
+  line-height: 57px;
+
 }
 
 .know-about-info {
   text-align: left;
   margin-right: 100px;
   color: #525560;
+  line-height: 25px;
 }
 
 .know-about-btn {
@@ -227,10 +209,7 @@ CSS For know about us section
   border: none;
 }
 
-.know-about-img {
-  width: 480px;
-  height: 580px;
-}
+
 
 /*
 ==============================================
@@ -238,7 +217,7 @@ CSS for activities section
 ==============================================
 */
 
-.home-activities {
+/* .home-activities {
   height: 650px;
   width: 85%;
   display: flex;
@@ -298,7 +277,7 @@ CSS for activities section
   font-size: 16px;
   font-weight: 500;
   color: black;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -312,7 +291,7 @@ CSS for activities section
 .activitites-image-group {
   display: flex;
   gap: 20px;
-}
+} */
 
 /*
 ==============================================
@@ -321,9 +300,8 @@ CSS For our team section
 */
 
 #our-team {
-  height: 600px;
   width: 80%;
-  /* background-color: red; */
+  overflow: hidden;
 }
 
 .our-team-container {
@@ -345,34 +323,57 @@ CSS For our team section
   color: #525560;
 }
 
-.team-card-content {
-  display: flex;
-  /* justify-content: space-between; */
-  gap: 50px;
-}
-
-.card1,
-.card2,
-.card3 {
-  height: 450px;
-  width: 320px;
-  /* background-color: aqua; */
-}
-
-.card-pic {
-  max-width: 320px;
-  max-height: 320px;
-  height: 310px;
+.team-card-wrapper {
+  overflow-x: auto;
   width: 100%;
 }
 
+.team-card-wrapper {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.team-card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.team-card-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.team-card-content {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+}
+
+.card {
+  flex: 0 0 auto;
+  height: 450px;
+  width: 320px;
+}
+
+.card-pic {
+  max-width: 310px;
+  max-height: 310px;
+  height: 300px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+  transform: scale(1.1);
+}
+
 .card-text-content {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
-
 
 .card-text-content h2 {
   font-size: 20px;
@@ -395,6 +396,8 @@ CSS For our team section
   height: 20px;
   width: 20px;
 }
+
+
 
 /*
 ==============================================

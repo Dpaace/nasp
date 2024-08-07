@@ -1,4 +1,3 @@
-
 /*
 ==============================================
 CSS For home-banner
@@ -301,9 +300,8 @@ CSS For our team section
 */
 
 #our-team {
-  height: 600px;
   width: 80%;
-  /* background-color: red; */
+  overflow: hidden;
 }
 
 .our-team-container {
@@ -325,34 +323,57 @@ CSS For our team section
   color: #525560;
 }
 
-.team-card-content {
-  display: flex;
-  /* justify-content: space-between; */
-  gap: 50px;
-}
-
-.card1,
-.card2,
-.card3 {
-  height: 450px;
-  width: 320px;
-  /* background-color: aqua; */
-}
-
-.card-pic {
-  max-width: 320px;
-  max-height: 320px;
-  height: 310px;
+.team-card-wrapper {
+  overflow-x: auto;
   width: 100%;
 }
 
+.team-card-wrapper {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.team-card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.team-card-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.team-card-content {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+}
+
+.card {
+  flex: 0 0 auto;
+  height: 450px;
+  width: 320px;
+}
+
+.card-pic {
+  max-width: 310px;
+  max-height: 310px;
+  height: 300px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+  transform: scale(1.1);
+}
+
 .card-text-content {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
-
 
 .card-text-content h2 {
   font-size: 20px;
@@ -375,6 +396,8 @@ CSS For our team section
   height: 20px;
   width: 20px;
 }
+
+
 
 /*
 ==============================================

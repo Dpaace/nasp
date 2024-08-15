@@ -109,7 +109,7 @@ CSS For conference section
 .text-content h1 {
   font-size: 45px;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 57px;
 }
 
 .text-content p {
@@ -219,7 +219,7 @@ CSS For our team section
 ==============================================
 */
 
-#our-team {
+/* #our-team {
   width: 80%;
   overflow: hidden;
 }
@@ -263,6 +263,7 @@ CSS For our team section
 }
 
 
+
 .team-card-content {
   display: flex;
   gap: 50px;
@@ -273,6 +274,105 @@ CSS For our team section
   flex: 0 0 auto;
   height: 450px;
   width: 320px;
+}
+
+.card-pic {
+  max-width: 310px;
+  max-height: 310px;
+  height: 300px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card-pic:hover {
+  transform: scale(1.1);
+}
+
+.card-text-content {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-text-content h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card-text-content h3 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1D2130;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-icons img {
+  height: 20px;
+  width: 20px;
+} */
+
+#our-team {
+  width: 80%;
+  overflow: hidden;
+}
+
+.our-team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-text-content p {
+  color: #525560;
+}
+
+.team-card-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden; /* Hide vertical overflow */
+  width: 100%;
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+.team-card-content {
+  display: inline-flex;
+  gap: 50px;
+}
+
+.team-card-wrapper::-webkit-scrollbar {
+  height: 5px;
+  background-color: #f1f1f1;
+}
+
+.team-card-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.team-card-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.card {
+  flex: 0 0 auto;
+  height: 450px;
+  width: 320px;
+  display: inline-block;
 }
 
 .card-pic {

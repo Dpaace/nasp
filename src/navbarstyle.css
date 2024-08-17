@@ -50,6 +50,9 @@ CSS For Navbar
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   height: 80px;
   width: 100%;
   display: flex;
@@ -57,7 +60,11 @@ CSS For Navbar
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .logo-container {
   display: flex;
@@ -100,7 +107,6 @@ CSS For Navbar
   border-radius: 4px;
 }
 
-/* Mobile View */
 @media (max-width: 767px) {
   .navbar {
     flex-direction: column;
@@ -141,7 +147,6 @@ CSS For Navbar
     margin: 15px auto;
   }
 
-  /* Hamburger Menu Icon */
   .navbar .hamburger {
     display: block;
     cursor: pointer;
@@ -157,7 +162,6 @@ CSS For Navbar
   }
 }
 
-/* Tablet View */
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     flex-direction: column;
@@ -198,7 +202,6 @@ CSS For Navbar
     margin: 15px auto;
   }
 
-  /* Hamburger Menu Icon */
   .navbar .hamburger {
     display: block;
     cursor: pointer;
@@ -216,7 +219,6 @@ CSS For Navbar
   
 }
 
-/* Desktop View */
 @media (min-width: 1025px) {
   .navbar {
     padding: 0 30px;
@@ -231,7 +233,6 @@ CSS For Navbar
   }
 }
 
-/* Show/Hide Nav on Mobile */
 .navbar.active .nav-items {
   display: flex;
 }

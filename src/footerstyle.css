@@ -25,9 +25,9 @@ CSS For Footer Section (Responsive)
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
-    gap: 100px;
+    gap: 30px;
 }
 
 .footer-content img {
@@ -102,6 +102,8 @@ CSS For Footer Section (Responsive)
 
     .footer-content {
         width: 60%;
+        align-items: flex-start;
+        gap: 100px;
     }
 
     .footer-icons img {
